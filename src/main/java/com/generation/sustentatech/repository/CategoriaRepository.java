@@ -7,6 +7,8 @@ import com.generation.sustentatech.model.Categoria;
 
 public interface CategoriaRepository extends JpaRepository <Categoria, Long> {
 	
-	List<Categoria> findAllByTipoContainingIgnoreCase(@Param("tipo") String tipo); 
+	List<Categoria> findAllByTipoContainingIgnoreCase(@Param("tipo") String tipo);
+
+	boolean isEmpty(); 
 
 }
