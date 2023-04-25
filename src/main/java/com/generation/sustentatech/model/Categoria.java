@@ -25,11 +25,11 @@ public class Categoria {
 	private Long id;
 	
 	@NotBlank(message = "O Atributo tipo é obrigatório")
-	@Size(min = 5, max = 255, message = "O atributo tipo deve ter no minimo 05 e no maximo 255 caracteres")
+	@Size(max = 255, message = "O atributo tipo deve ter no maximo 255 caracteres")
 	private String tipo;
 	
 	@NotBlank(message = "O Atributo descricao é obrigatório")
-	@Size(min = 10, max = 1000, message = "O atributo título deve ter no minimo 10 e no maximo 1000 caracteres")
+	@Size(max = 1000, message = "O atributo descricao deve ter no maximo 1000 caracteres")
 	private String descricao;
 	
 	@OneToMany(fetch=FetchType.LAZY, mappedBy = "categoria", cascade = CascadeType.REMOVE)
