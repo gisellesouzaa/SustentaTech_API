@@ -3,7 +3,6 @@ package com.generation.sustentatech.model;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.generation.sustentatech.Produto;
 
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;

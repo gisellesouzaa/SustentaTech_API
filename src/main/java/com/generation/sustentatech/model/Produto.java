@@ -1,9 +1,8 @@
-package com.generation.sustentatech;
+package com.generation.sustentatech.model;
 
 import java.math.BigDecimal;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.generation.sustentatech.model.Categoria;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
