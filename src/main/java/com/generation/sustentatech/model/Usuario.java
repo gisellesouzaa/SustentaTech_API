@@ -1,5 +1,6 @@
 package com.generation.sustentatech.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -21,7 +22,8 @@ public class Usuario {
 	@Size(max = 255, message = "O atributo nome deve ter no maximo 255 caracteres")
 	private String nome;
 	
-	@Email
+	@Schema(example = "email@email.com.br")
+	@Email(message = "O Atributo Usuário deve ser um email válido!")
 	@NotBlank(message = "O Atributo usuario é obrigatório")
 	@Size(max = 255, message = "O atributo usuario deve ter no maximo 255 caracteres")
 	private String usuario;
