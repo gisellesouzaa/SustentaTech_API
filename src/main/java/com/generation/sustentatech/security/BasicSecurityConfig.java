@@ -64,6 +64,7 @@ public class BasicSecurityConfig {
                         .requestMatchers("/usuarios/cadastrar").permitAll()
                         .requestMatchers("/produtos").permitAll()
                         .requestMatchers("/categorias").permitAll()
+                        .requestMatchers("/categorias/id").permitAll()
                         .requestMatchers("/error/**").permitAll()
                         .requestMatchers(HttpMethod.OPTIONS).permitAll()
                         .anyRequest().authenticated())
