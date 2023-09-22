@@ -37,7 +37,7 @@ As seguintes ferramentas foram usadas na construção do projeto:
 
 <h2> EndPoints: </h2>
 Abaixo consta os recursos da API:
-<!--   <img alt="Imagem com os EndPoints da Aplicação" src="EndPoints_da_Aplicação.png" /> -->
+<img alt="Imagem com os EndPoints da Aplicação" src="EndPoints_da_Aplicação.png" />
 
 ---
 
